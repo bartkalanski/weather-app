@@ -8,6 +8,8 @@ const ui = new UI();
 const search = document.getElementById("searchUser");
 const button = document.getElementById("submit");
 
+//Submit Button
+
 button.addEventListener("click", () => {
     const currentVal = search.value;
 
@@ -16,3 +18,9 @@ button.addEventListener("click", () => {
         ui.populateUI(data);
     });
 });
+
+//Reset Button
+
+function myButton() {
+    location.reload()
+}
